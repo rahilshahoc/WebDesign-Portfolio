@@ -1,0 +1,246 @@
+:root {
+  --grid_col: 1;
+}
+@media (min-width: 479px) {
+  :root {
+    --grid_col: 2;
+  }
+}
+@media (min-width: 992px) {
+  :root {
+    --grid_col: 3;
+  }
+}
+@media (min-width: 1299px) {
+  :root {
+    --grid_col: 3;
+  }
+}
+@media (min-width: 1399px) {
+  :root {
+    --grid_col: 4;
+  }
+}
+@media (min-width: 1540px) {
+  :root {
+    --grid_col: 5;
+  }
+}
+@media (min-width: 2399px) {
+  :root {
+    --grid_col: 6;
+  }
+}
+
+/*------------- color variables ------------*/
+/*------------- color variables ------------*/
+/*----------------- responsive variations -----------------*/
+/*----------------- responsive variations -----------------*/
+/*----------------- mixin variations -----------------*/
+.common_btn {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 29px;
+  background-color: #2494A2;
+  color: #FFFFFF;
+  border-radius: 2px;
+  padding: 10px 30px;
+  height: auto;
+  width: auto;
+  border: 0;
+  outline: none;
+  box-shadow: none;
+  transition: all 0.35s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.common_btn:focus {
+  box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.35);
+}
+.common_btn:hover {
+  box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.35);
+}
+.common_btn:hover .btn_arrow {
+  width: 18px;
+  right: -8px;
+}
+.common_btn.btn_gray {
+  background-color: #f5f5f5;
+  color: #000000;
+}
+.common_btn.btn_black {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+.common_btn.btn_white {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+.common_btn.btn_lightBlue {
+  background-color: #E4FCFD;
+  color: #000000;
+}
+.common_btn .btn_arrow {
+  width: 0px;
+  height: auto;
+  max-height: 11px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.35s ease-in-out;
+  position: relative;
+  right: 0;
+  overflow: hidden;
+}
+.common_btn .btn_arrow img {
+  height: auto;
+  width: 16px;
+}
+@media (max-width: 575px) {
+  .common_btn {
+    font-style: normal;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 10px 20px;
+  }
+}
+
+.common_title {
+  font-style: normal;
+  font-size: 25px;
+  line-height: 32px;
+  font-weight: 600;
+  color: #111111;
+  text-align: center;
+  margin: 0 0 28px;
+  display: inline-block;
+  width: 100%;
+  letter-spacing: 0.03em;
+}
+.common_title br {
+  display: none;
+}
+@media (max-width: 991px) {
+  .common_title br {
+    display: inline-block;
+  }
+}
+@media (max-width: 768px) {
+  .common_title {
+    margin: 0 0 20px;
+  }
+}
+@media (max-width: 575px) {
+  .common_title {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.section_subTitle {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0 0 10px;
+  color: #111111;
+}
+@media (max-width: 575px) {
+  .section_subTitle {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.54px;
+  }
+}
+
+/*----------------- mixin variations -----------------*/
+.border_858C94 {
+  border-color: #858C94;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-span-2 {
+  grid-column: span 2;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-span-3 {
+  grid-column: span 3;
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-span-4 {
+  grid-column: span 4;
+}
+
+.grid-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-span-5 {
+  grid-column: span 5;
+}
+
+.grid-6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.grid-span-6 {
+  grid-column: span 6;
+}
+
+.grid-7 {
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.grid-span-7 {
+  grid-column: span 7;
+}
+
+.grid-8 {
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.grid-span-8 {
+  grid-column: span 8;
+}
+
+.grid-9 {
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.grid-span-9 {
+  grid-column: span 9;
+}
+
+.grid-10 {
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.grid-span-10 {
+  grid-column: span 10;
+}
+
+.text-sucsess {
+  color: #2494A2 !important;
+}
+
+@media (max-width: 768px) {
+  .hide_tab_view {
+    display: none;
+  }
+}/*# sourceMappingURL=variables.css.map */

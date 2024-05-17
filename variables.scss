@@ -1,0 +1,967 @@
+:root {
+    --grid_col: 1;
+
+    @media (min-width: 479px) {
+        --grid_col: 2;
+    }
+
+    @media (min-width: 992px) {
+        --grid_col: 3;
+    }
+
+    @media (min-width: 1299px) {
+        --grid_col: 3;
+    }
+
+    @media (min-width: 1399px) {
+        --grid_col: 4;
+    }
+
+    @media (min-width: 1540px) {
+        --grid_col: 5;
+    }
+
+    @media (min-width: 2399px) {
+        --grid_col: 6;
+    }
+}
+
+$Raleway: 'Raleway',
+sans-serif;
+
+/*------------- color variables ------------*/
+$light_cream: #F8F4F1;
+$black: #000000;
+$darkbrown: #333333;
+$lightblue: #18959e;
+$offwhite: #f1f1f1;
+$offwhite_hover: #dddddd;
+$dark: #111111;
+$darkcream: #818181;
+$darkblue: #1d2444;
+$lightbrown: #7c7875;
+$white: #FFFFFF;
+$green: #008000;
+$lightgreen: #4caf50;
+$form_border: #CCCCCC;
+$darkbrown: #444444;
+$turquoise_light: #CBEEEF;
+$cyan_light: #C9EDE5;
+
+$highlight: #FFEEA9;
+$blue: #276FBF;
+
+$white_light_bg: #FAFAFA;
+$white_light_bg_F9: #F9F9F9;
+$rating_clr: #F0A202;
+$slidDot: #0A1F30;
+$clroffwhite: #f5f5f5;
+$border_color_dark: #262626;
+$border_color_light: #D9D9D9;
+$border_color_lightdark: #ABABAB;
+$seamaster_light: #BDBDBD;
+$text_clr: #565454;
+$seamaster_dark: #2A2B2E;
+$light_grey: #F6F5F5;
+$highlight_light: #FFFCF0;
+$step_bg: #6A7580;
+$step_border_bg: #CED4DA;
+$grey_dark: #777777;
+$neutral_grey: #858C94;
+$story_bg_clr: #DFF2F2;
+$field_bg_clr: #F4F6F9;
+$seamaster_light_red: #EFCBCB;
+$selected_clr: #4053be;
+
+
+// seamaster color
+$header_gray_clr: #929292;
+$darkN: #1C1C1C;
+$gray_header_font: #636363;
+$tab_header_font: #888888;
+$testimonial_border: #E9E9E9;
+$grayBoxbg: #F7F7F7;
+$gray300_border: #D0D5DD;
+$navy_blue :#081A28;
+// $turquoise: #22D3D6;
+$turquoise: #2494A2;
+// $turquoise: #2494A2;
+$turquoiseDark: #2494A2;
+$turquoise_bg: #E4FCFD;
+$header_gray_border: #DCDCDC;
+$text_gray: #667085;
+$text_darkGray: #858585;
+$border_light_gray: #EEEEEE;
+$border_light_gray_01: #dadce0;
+$border_dark_gray: #D3D3D3;
+$overlayBlack: #3C3B3B;
+$overlayLightBlack: #333333;
+$overlayDarkBlack: #767676;
+$checkBoxLabel: #595959;
+$border_gray: #B4B4B4;
+$menu_bg_link: #F2F2F2;
+$menu_toggle_border: #b8b8b8;
+$black_light: #515151;
+$card_sec_border: #BEBEBE;
+$checkbox_title: #344054;
+$step_label: #21314B;
+$lightWhiteBorder:#B3B3B3;
+$borderModal:#EAECF0;
+$checkBox_bg:#F9F5FF;
+$requiredColor:#FF0000;
+$qty_text: #2B2B2B;
+$modal_text:#969696;
+$search_input: #09101D;
+$shadowDark: #5f5f5f;
+$shardow2: #b8b8b840;
+$shadowBorder: #D7D7D7;
+// seamaster color
+
+$error_clr: #dc3545;
+$error_clr_one: #ea5455;
+
+$header_border_clr: #F0F0F0;
+$datepicker_border_clr: #CCC9C9;
+$label_text_clr: #585656;
+$border_clr_dark: #5A5A66;
+$toast_shadow_clr: #212121;
+
+$simmer_bg: #f6f6f6;
+$simmer_loading_start: #f8f8f8;
+$simmer_loading_end: #DBDBDB;
+$slider_dot : #EBEBEB;
+$slider_arrow: #FBFBFB;
+$slider_arrow2 : #ADADAD;
+
+$field_border_clr_O50: rgba(133, 140, 148, 0.5);
+$cyan_light_O30: rgba(201, 237, 229, 0.3);
+$seamaster_dark_O30: rgba(42, 43, 46, 0.3);
+$seamaster_dark_O50: rgba(42, 43, 46, 0.5);
+$black_O00: rgba(0, 0, 0, 0);
+$black_O02_5: rgba(0, 0, 0, 0.25);
+$black_O10: rgba(0, 0, 0, 0.1);
+$black_O15: rgba(0, 0, 0, 0.15);
+$black_O20: rgba(0, 0, 0, 0.2);
+$black_O25: rgba(0, 0, 0, 0.25);
+$black_O30: rgba(0, 0, 0, 0.30);
+$black_O35: rgba(0, 0, 0, 0.35);
+$black_O40: rgba(0, 0, 0, 0.40);
+$black_O50: rgba(0, 0, 0, 0.5);
+$black_O60: rgba(0, 0, 0, 0.6);
+$black_O70: rgba(0, 0, 0, 0.70);
+$black_O75: rgba(0, 0, 0, 0.75);
+$black_O80: rgba(0, 0, 0, 0.8);
+$turquoise_O20: rgba(34, 211, 214, 0.2);
+$turquoise_O60: rgba(34, 211, 214, 0.60);
+$turquoise_O80: rgba(34, 211, 214, 0.80);
+$light_white_0: rgba(255, 255, 255, 0);
+$card_shadow: rgba(184, 184, 184, 0.25);
+$lightGray_bg:rgba(151, 151, 151, 0.5);
+
+
+$clr_1a1a1a_020: rgba(26, 26, 26, 0.2);
+$clr_1a1a1a_050: rgba(26, 26, 26, 0.5);
+$dark_000: rgba(17, 17, 17, 0);
+$dark_020: rgba(17, 17, 17, 0.2);
+$toast_success_060: rgba(81, 163, 81, 0.6);
+$toast_error_060: rgba(189, 54, 47, 0.6);
+$modal_backdrop_clr: #1e1e1e;
+$footer_bg: #F9FAFC;
+$card_shadow_blue_O64: rgba(47, 50, 147, 0.64);
+$border_clr_17_O04: rgba(17, 17, 17, 0.04);
+$snow_effect_bg: #252525;
+$gray_clr_98: #989898;
+$white_light_one: #F2F4F7;
+$input_placeholder:#9EA5AD;
+$white_light_bg_EF : #EFEFEF;
+$gray_light_bb : #BBBBBB;
+$cancel_btn:#FF212E;
+$bg_gray:#E6E6E6;
+$bg_badge:#979797;
+$toast_success:#6eb97d;
+$toast_error:#bb4a44;
+$toast_warning:#d99431;
+$toast_info:#4d8495;
+$cardBedge:#304B78;
+$grayBgBox:#eeeeee;
+$darkInputBorder:#6B6B6B;
+
+
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+};
+
+/*------------- color variables ------------*/
+
+/*----------------- responsive variations -----------------*/
+$laptop-screen: 1980px;
+$sm-laptop-screen: 1600px;
+$mid-sm-laptop-screen: 1536px;
+$xssm-laptop-screen: 1440px;
+$xsm-laptop-screen: 1400px;
+$sm-mid-screen: 1399px;
+$sm-mini-screen: 1299px;
+$mini-screen: 1199px;
+$tab-max: 1024px;
+$ipad-view: 991px;
+$tab-view: 768px;
+// $mobile-view: 558px;
+$mobile-view: 575px;
+$mobile-md-view: 530px;
+$mobile-sm-view: 480px;
+$mobile-xsm-view: 370px;
+$landscape-sm: 320px;
+$landscape-lg: 550px;
+$landscape_xlg: 767px;
+
+
+@mixin laptop-screen {
+    @media (max-width: #{$laptop-screen}) {
+        @content;
+    }
+}
+
+@mixin sm-laptop-screen {
+    @media (max-width: #{$sm-laptop-screen}) {
+        @content;
+    }
+}
+
+@mixin mid-sm-laptop-screen {
+    @media (max-width: #{$mid-sm-laptop-screen}) {
+        @content;
+    }
+}
+
+@mixin xssm-laptop-screen {
+    @media (max-width: #{$xssm-laptop-screen}) {
+        @content;
+    }
+}
+
+@mixin xsm-laptop-screen {
+    @media (max-width: #{$xsm-laptop-screen}) {
+        @content;
+    }
+}
+
+@mixin sm-mid-screen {
+    @media (max-width:#{$sm-mid-screen}) {
+        @content;
+    }
+}
+
+@mixin sm-mini-screen {
+    @media (max-width:#{$sm-mini-screen}) {
+        @content;
+    }
+}
+
+@mixin mini-screen {
+    @media (max-width: #{$mini-screen}) {
+        @content;
+    }
+}
+
+@mixin tab-max {
+    @media (min-width: 768px) and (max-width: #{$tab-max}) {
+        @content;
+    }
+}
+
+@mixin ipad-view {
+    @media (max-width: #{$ipad-view}) {
+        @content;
+    }
+}
+
+@mixin tab-view {
+    @media (max-width: #{$tab-view}) {
+        @content;
+    }
+}
+
+@mixin mobile-view {
+    @media (max-width: #{$mobile-view}) {
+        @content;
+    }
+}
+
+@mixin mobile-md-view {
+    @media (max-width: #{$mobile-md-view}) {
+        @content;
+    }
+}
+
+@mixin mobile-sm-view {
+    @media (max-width: #{$mobile-sm-view}) {
+        @content;
+    }
+}
+
+@mixin mobile-xsm-view {
+    @media (max-width: #{$mobile-xsm-view}) {
+        @content;
+    }
+}
+
+@mixin landscape-sm {
+    @media (min-height: #{$landscape-sm}) {
+        @content;
+    }
+}
+
+@mixin landscape-lg {
+    @media (max-height: #{$landscape-lg}) {
+        @content;
+    }
+}
+
+@mixin landscape_xlg {
+    @media (max-width: #{$landscape_xlg}) {
+        @content;
+    }
+}
+
+/*----------------- responsive variations -----------------*/
+
+/*----------------- mixin variations -----------------*/
+@mixin df-s-c {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@mixin df-c-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin df-align-c {
+    display: flex;
+    align-items: center;
+}
+@mixin headOne {
+    font-size: 2.645rem;
+    line-height: normal;
+    font-weight: 700;
+
+    @include ipad-view {
+        font-size: 2rem;
+    }
+
+    @include mobile-view {
+        font-size: 1.7rem;
+    }
+}
+
+@mixin headTwo {
+    font-size: 2rem;
+    line-height: normal;
+    font-weight: 700;
+
+
+    @include tab-view {
+        font-size: 1.68rem;
+    }
+
+    @include mobile-view {
+        font-size: 1.30rem;
+    }
+}
+
+@mixin headThree {
+    font-size: 1.68rem;
+    line-height: normal;
+    font-weight: 700;
+
+    @include mini-screen {
+        font-size: 1.5rem;
+    }
+
+    @include tab-view {
+        font-size: 1.25rem;
+    }
+
+    @include mobile-view {
+        font-size: 1rem;
+    }
+}
+
+@mixin headFour {
+    font-size: 1.296rem;
+    line-height: normal;
+    font-weight: 700;
+
+    @include tab-view {
+        font-size: 1.12rem;
+    }
+
+    @include mobile-view {
+        font-size: 1rem;
+    }
+}
+
+@mixin quote_text {
+    font-size: 6rem;
+    line-height: 6rem;
+    font-weight: 700;
+
+    @include tab-view {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+}
+
+@mixin font-100 {
+    font-weight: 100;
+}
+
+@mixin font-200 {
+    font-weight: 200;
+}
+
+@mixin font-300 {
+    font-weight: 300;
+}
+
+@mixin font-400 {
+    font-weight: 400;
+}
+
+@mixin font-500 {
+    font-weight: 500;
+}
+
+@mixin font-600 {
+    font-weight: 600;
+}
+
+@mixin font-700 {
+    font-weight: 700;
+}
+
+@mixin font-800 {
+    font-weight: 800;
+}
+
+@mixin font-900 {
+    font-weight: 800;
+}
+
+@mixin font-10 {
+    font-style: normal;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+@mixin font-12 {
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+@mixin font-13 {
+    font-style: normal;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+@mixin font-14 {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+@mixin font-15 {
+    font-style: normal;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+@mixin font-16 {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 29px;
+}
+
+@mixin font-18 {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+@mixin font-19 {
+    font-style: normal;
+    font-size: 19px;
+    line-height: 29px;
+}
+
+@mixin font-20 {
+    font-style: normal;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+@mixin font-21 {
+    font-style: normal;
+    font-size: 21px;
+    line-height: 30px;
+}
+
+@mixin font-22 {
+    font-style: normal;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+@mixin font-24 {
+    font-style: normal;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+@mixin font-25 {
+    font-style: normal;
+    font-size: 25px;
+    line-height: 32px;
+}
+
+@mixin font-26 {
+    font-style: normal;
+    font-size: 26px;
+    line-height: 34px;
+}
+
+@mixin font-28 {
+    font-style: normal;
+    font-size: 28px;
+    line-height: 36px;
+}
+
+@mixin font-30 {
+    font-style: normal;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+@mixin font-32 {
+    font-style: normal;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+@mixin font-34 {
+    font-style: normal;
+    font-size: 34px;
+    line-height: 60px;
+}
+
+@mixin font-35 {
+    font-style: normal;
+    font-size: 35px;
+    line-height: 45px;
+}
+
+@mixin font-38 {
+    font-style: normal;
+    font-size: 38px;
+    line-height: 48px;
+}
+
+@mixin font-40 {
+    font-style: normal;
+    font-size: 40px;
+    line-height: 51px;
+}
+
+@mixin font-42 {
+    font-style: normal;
+    font-size: 42px;
+    line-height: 52px;
+}
+
+@mixin font-45 {
+    font-style: normal;
+    font-size: 45px;
+    line-height: 55px;
+}
+
+@mixin font-48 {
+    font-style: normal;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+@mixin font-50 {
+    font-style: normal;
+    font-size: 50px;
+    line-height: 65px;
+}
+
+@mixin font-53 {
+    font-style: normal;
+    font-size: 53px;
+    line-height: 68px;
+}
+
+@mixin font-60 {
+    font-style: normal;
+    font-size: 60px;
+    line-height: 56px;
+}
+
+@mixin font-72 {
+    font-style: normal;
+    font-size: 72px;
+    line-height: 84px;
+}
+
+@mixin white-borderded-button {
+    border-radius: 5px;
+    background-color: transparent;
+    color: $text-white;
+    border: 1px solid $text-white;
+}
+
+@mixin white-bg-button {
+    border-radius: 5px;
+    background-color: $text-white;
+    border: 1px solid $text-white;
+}
+
+@mixin commonButton {
+    @include font-500;
+    @include font-16;
+    background-color: $turquoise;
+    color: $white;
+    border-radius: 2px;
+    padding: 10px 30px;
+    height: auto;
+    width: auto;
+    border: 0;
+    outline: none;
+    box-shadow: none;
+    transition: all 0.35s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-feature-settings: "pnum"on, "lnum"on;
+
+    &:focus {
+        box-shadow: 1px 1px 16px $black_O35;
+    }
+
+    &:hover {
+        box-shadow: 1px 1px 16px $black_O35;
+
+        .btn_arrow {
+            width: 18px;
+            right: -8px;
+        }
+    }
+
+    &.btn_gray {
+        background-color: $clroffwhite;
+        color: $black;
+    }
+
+    &.btn_black {
+        background-color: $black;
+        color: $white;
+    }
+
+    &.btn_white {
+        background-color: $white;
+        color: $black;
+    }
+
+    &.btn_lightBlue {
+        background-color: $turquoise_bg;
+        color: $black;
+    }
+
+    .btn_arrow {
+        width: 0px;
+        height: auto;
+        max-height: 11px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.35s ease-in-out;
+        position: relative;
+        right: 0;
+        overflow: hidden;
+
+        img {
+            height: auto;
+            width: 16px;
+        }
+    }
+
+    @include mobile-view {
+        @include font-13;
+        padding: 10px 20px;
+    }
+}
+
+@mixin border_btn {
+    background: transparent;
+    border: 2px solid $turquoise;
+    border-radius: 6px;
+}
+
+.common_btn {
+    @include commonButton;
+}
+
+@mixin sliderDots {
+    ::ng-deep {
+        .slick-dots {
+            li {
+                margin: 0 3px;
+
+                @include mobile-view {
+                    margin: 0;
+                }
+
+                button {
+                    @include mobile-view {
+                        height: 15px;
+                        width: 15px;
+                    }
+
+                    &::before {
+                        color: $slider_dot;
+                        opacity: 1;
+                        @include font-14;
+                        line-height: normal;
+
+                        @include mobile-view {
+                            @include font-12;
+                            line-height: normal;
+                            height: 15px;
+                            width: 15px;
+                        }
+                    }
+                }
+
+                &.slick-active {
+                    button {
+                        &::before {
+                            color: $turquoise;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin sliderArrow {
+    ::ng-deep {
+        .slick-arrow {
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: 35px;
+            height: 35px;
+            background-color: $slider_arrow;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 6px 6px $black_O15;
+            transition: box-shadow 0.5s ease-in-out;
+            z-index: 2;
+
+            &:hover {
+                box-shadow: 0px 6px 16px $black_O25;
+            }
+
+            &.slick-disabled {
+                &::before {
+                    background: url(/assets/seamaster/sliderArrowGray_left.svg) no-repeat center;
+                    background-size: 8px;
+                }
+            }
+
+            &:before {
+                content: '';
+                width: 100%;
+                height: 100%;
+                display: block;
+                content: '';
+                background: url(/assets/seamaster/prev-active.png) no-repeat center;
+                // background: url(/assets/seamaster/sliderArrowGray_left.svg) no-repeat center;
+                background-size: 8px;
+            }
+
+            &.slick-next {
+                left: auto;
+                right: -15px;
+
+                @include ipad-view {
+                    right: 0px;
+                }
+
+                &:before {
+                    content: '';
+                    // background: url(/assets/seamaster/sliderArrowGray_right.svg) no-repeat center;
+                    background: url(/assets/seamaster/next-active.png) no-repeat center;
+                    background-size: 8px;
+                }
+
+                &.slick-disabled {
+                    &::before {
+                        background: url(/assets/seamaster/sliderArrowGray_right.svg) no-repeat center;
+                        background-size: 8px;
+                    }
+                }
+            }
+
+            &.slick-prev {
+                left: -15px;
+                right: auto;
+
+                @include ipad-view {
+                    left: 0px;
+                }
+            }
+        }
+    }
+}
+
+@mixin commonSecTitle {
+    @include font-25;
+    @include font-600;
+    color: $dark;
+    text-align: center;
+    margin: 0 0 28px;
+    display: inline-block;
+    width: 100%;
+    letter-spacing: 0.03em;
+
+    br {
+        display: none;
+
+        @include ipad-view {
+            display: inline-block;
+        }
+    }
+
+    @include tab-view {
+        margin: 0 0 20px;
+    }
+
+    @include mobile-view {
+        @include font-18;
+    }
+}
+
+.common_title {
+    @include commonSecTitle;
+}
+
+@mixin commonSecSubTitle {
+    @include font-600;
+    @include font-20;
+    margin: 0 0 10px;
+    color: $dark;
+
+    @include mobile-view() {
+        @include font-18;
+        letter-spacing: 0.54px;
+    }
+}
+
+.section_subTitle {
+    @include commonSecSubTitle;
+}
+
+/*----------------- mixin variations -----------------*/
+.border_858C94 {
+    border-color: #858C94;
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-span-2 {
+    grid-column: span 2;
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-span-3 {
+    grid-column: span 3;
+}
+
+.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-span-4 {
+    grid-column: span 4;
+}
+
+.grid-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-span-5 {
+    grid-column: span 5;
+}
+
+.grid-6 {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.grid-span-6 {
+    grid-column: span 6;
+}
+
+.grid-7 {
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.grid-span-7 {
+    grid-column: span 7;
+}
+
+.grid-8 {
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.grid-span-8 {
+    grid-column: span 8;
+}
+
+.grid-9 {
+    grid-template-columns: repeat(9, 1fr);
+}
+
+.grid-span-9 {
+    grid-column: span 9;
+}
+
+.grid-10 {
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.grid-span-10 {
+    grid-column: span 10;
+}
+
+.text-sucsess {
+    color: $turquoise !important;
+}
+
+.hide_tab_view {
+    @include tab-view {
+        display: none;
+    }
+}
